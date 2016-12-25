@@ -1,0 +1,916 @@
+/* Begin Typography & Colors */
+body {
+	font-size: 50%; /* Resets 1em to 10px */
+	color: #333;
+	text-align: left;
+	background: #000;
+}
+
+#page {
+	/*background-color: white;*/
+	/*border: 1px solid #959596;*/
+	text-align: left;
+}
+
+#header {
+	/*background: #000 url('images/kubrickheader.jpg') no-repeat left bottom;*/
+	vertical-align: top;
+}
+
+/* THE AMAZING FLOAT */
+
+/*#footainer {
+	height: 1500px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 10px;
+}*/
+
+#foo {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	padding: 10px;
+	/*color: white;*/
+	height: 60px;
+	background: #000 url(images/footimg3.gif) no-repeat fixed right bottom;
+	border-top: 1px solid #999;
+	clear:both;
+	color: white;
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+	font-weight:bold;
+}
+
+/* ENDS THE AMAZING FLOAT*/
+
+/* -------------------------------------------------------------------------- */
+
+/* GALLERY AND BACKDROP */
+
+#backdropjs_foreground {
+    position: absolute;
+	left: 0;
+	top: 0;	
+	width: 100%;
+	height: 100%;
+	margin: 0;	
+	padding: 0;	
+	/*overflow: auto;*/	
+}
+
+/* Creates fixed background layer at full browser size and sets background color */
+#backdropjs_background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;	
+	height: 100%;
+	margin: 0;	
+	padding: 0;	
+	/*overflow: hidden;*/			
+	z-index: -1;
+}
+
+/* Styles text for 'Flash Payer Required' message */
+#backdropjs_background p {
+	/*color: #999999;*/
+	/*font-weight: bold;*/
+	/*padding: 5px 0px 0px 10px;*/
+}
+
+/* IMG SPECIFIC */
+pequena, pequena a, pequena a:hover {
+	padding: 10px;
+	margin-left: 10px;
+	background-color: black;
+	border: 20px solid purple;
+}
+
+/*a {
+	font-size: 0.8em;
+	text-decoration: none;
+}*/
+
+a img {
+	padding: 10px;
+	margin-left: 10px;
+	border-width: 0;
+	border: none;
+	display: block;
+}
+a img:hover {
+	background-color: #fff;
+	border: none;
+}
+
+/* END IMG SPECIFIC */
+
+
+/* END GALLERY AND BACKDROP */
+
+/* -------------------------------------------------------------------------- */
+
+#headmenu {
+	color: white;
+	width: 250px;
+	height: 50px;
+	float: left;
+	margin-top: 50px;
+	vertical-align: bottom;
+	text-align: left;
+}
+#headerimg 	{
+	margin: 10px;
+	height: 100px;
+	width: 100%;
+	}
+
+#content {  /*content area bg*/
+	font-size: 1.6em;
+	line-height: 2.5;
+}
+
+.widecolumn .entry p { /*!!! POST BOX BG*/
+	font-size: 1.05em;
+	background-color: #fff;
+	padding: 10px;
+	border-style: none;
+	color: #000;
+}
+
+.narrowcolumn .entry, .widecolumn .entry {  /*POST txt outer block bg*/
+	line-height: 1.4em;
+	padding: 20px;
+	background-color: #fff;
+	width: 600px;
+}
+
+.widecolumn { /*post global container */
+	line-height: 1.6em;
+	padding: 10px;
+}
+
+.narrowcolumn .postmetadata { /*box of small text and tags, botom page*/
+	text-align: left;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.alt {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	}
+
+#footer {
+	/*background: #fff;*/
+	border: none;
+	}
+
+small {
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	/*background-color: #f79fff;*/
+}
+
+h1, h2, h3 {
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 4em;
+	text-align: left;
+}
+
+#headerimg .description {
+	font-size: 1.2em;
+	text-align: left;
+	}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h2.pagetitle {
+	font-size: 1.6em;
+	}
+
+#sidebar h2 {
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+	font-size: 1.2em;
+	}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {
+	text-decoration: none;
+	color: white;
+	background-color: #FFF;
+}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	color: #DDD;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	line-height: 1.4em;
+}
+
+autor {
+	color: #CCC;
+	font: 0.8em Helvetica, 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.entry p a:visited {
+	color: #999;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font: 1em Helvetica, 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background-color: #fff;
+	border-style: none;
+	color: #333;
+}
+
+.commentlist li { /* fundo bloco comentarios*/
+	font-weight: bold;
+}
+
+.commentlist li .avatar { 
+	float: right;
+	padding: 2px;
+	background: #fff;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p { /*fundo paragrafo comentário*/
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+}
+
+#commentform p { /*caixas form items comentario*/
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+#sidebar {
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	color: gray; /*fundo blocos texto pequeno, form labels*/
+	/*background-color: #fff;*/
+	padding: 3px;
+}
+
+code {
+	font: 1.1em 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a {
+	color: #3399FF;
+	text-decoration: none;
+	padding: 5px;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #FFF;
+	background-color: #000;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {  /*post title hover*/
+	color: #fff;
+	background-color: #000;
+}
+
+enlace {
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+	color: #000;
+	font-size: 1.2em;
+	text-decoration: none;
+	padding: 3px;
+	font-weight: bold;
+	line-height: 2.5em;
+}
+
+enlace a, .linkpad a {
+	padding: 3px;
+	text-decoration: none;
+	color: #FFF;
+	background-color: #000;
+}
+
+.linkpad a {
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+enlace a:visited, .linkpad a:visited {
+	color: #DDD;
+	background-color: #333;
+}
+
+enlace a:hover, .linkpad a:hover {
+	padding: 3px;
+	color: #000;
+	background-color: #FFF;
+}
+
+hometitle {
+	color: white;
+	border: 1px solid #000;
+	font-family: Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+hometitle a, #foo a {
+	color: #fff;
+	border: 1px solid #000;
+	font: normal 2.5em Helvetica, Arial, Verdana, Sans-Serif;
+}
+
+hometitle a:hover, #foo a:hover {
+	color: #000;
+	border: 1px solid white;
+	background-color: #FFF;
+}
+
+#wp-calendar #prev a, #wp-calendar #next a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+/* End Typography & Colors --------------*/
+
+
+
+/* Begin Structure --------------------*/
+body {
+	margin: 0 0 0px 0;
+	padding: 0;
+}
+
+#page {
+	/*background-color: #fff;*/   /*MAIN TEXT BLOCK*/
+	margin:  0px;
+	width: 100%;
+}
+
+#header {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	width: 100%;
+	vertical-align: text-bottom;
+}
+
+#headerimg {
+	margin: 10px;
+	height: 100px;
+	width: 100%;
+	}
+
+.narrowcolumn {
+	float: left; /* COLUMNS ORDER */
+	padding: 0 0 100px 45px;
+	margin: 0px 0 60px;
+	width: 450px;
+	}
+	
+.homecolumn {
+	width: 95%;
+	padding: 20px;
+	margin-bottom: 80px;
+}
+
+.flasher {
+}
+
+.widecolumn {
+	padding: 10px 0 20px 0;
+	margin: 5px 0 0 150px;
+	width: 450px;
+}
+
+.linkpad {
+	padding: 10px;
+	display: block;
+}
+
+/*POST TITLE*/
+.postit {
+	text-align: left;
+	background-color: #000;
+	background-image: url(images/diag2.gif);
+	border: 1px solid #FFF;
+	width: 300px;
+	display: inline-table;
+	position: relative;
+	height: 300px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 0;
+	float:left;
+}
+
+.postit:hover {
+	background-color: #333;
+}
+
+.pastit {
+	text-align: left;
+	background-color: #000;
+	/*background-image: url(images/diag2.gif);*/
+	border: 1px solid #FFF;
+	width: 300px;
+	display: inline-table;
+	position: relative;
+	height: 300px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float:left;
+}
+
+.pastit:hover {
+	background-color: #333;
+}
+
+.post {
+	text-align: left;
+	float: none;
+	background-color: #000;
+	background-image: url(images/diag2.gif);
+	border: 1px solid white;
+	margin: 40px 0 20px;
+}
+
+.post hr {
+	display: inline;
+}
+
+.widecolumn .post {
+	margin: 0;
+}
+
+.narrowcolumn .postmetadata {
+	background-color: #000;
+	margin: 0;
+	padding: 10px;
+	background-image: url(images/diag2.gif);
+}
+
+.widecolumn .postmetadata {
+	margin: 30px 0;
+	background-color: #e0e0e0;
+}
+
+.widecolumn .smallattachment {
+	text-align: center;
+	float: left;
+	width: 128px;
+	margin: 5px 5px 5px 0px;
+}
+
+.widecolumn .attachment {
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.postmetadata {
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	padding: 30px;
+	clear: both;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0px 0;
+	text-align: center;
+}
+/* End Structure -----------------------*/
+
+
+
+/*	Begin Headers */
+
+
+h1 {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+h2 {
+	line-height: 1.6;
+	padding: 10px 20px 20px;
+}
+
+h2.pagetitle {
+	text-align: center;
+	background-color: #000000;
+	margin-top: 10px;
+	font-size: 2em;
+	border-color: #FFF;
+	border-width: 1px;
+}
+
+#sidebar h2 {
+	margin: 5px 0 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+h3 { /* POST TITLES in CATEGORY LIST */
+	margin: 30px 0 0;
+	line-height: 1.4;
+	padding: 10px 20px 20px;
+}
+
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px ;
+	background-color: #a9a9a9;
+}
+/* End Headers */
+
+/* Begin Images */
+
+/*p img {
+	padding: 0;
+	max-width: 100%;
+	}*/
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: block;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline-table;
+	}
+
+.alignright {
+	/*float: right;*/
+	display: block;
+}
+
+.alignleft {
+	/*float: left;*/
+	display: block;
+}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	}
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul li:before, #sidebar ul ul li:before {
+	content: "\00BB \0020";
+	}
+
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 15px;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;
+	}
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 10px auto;
+	padding: 5px 3px;
+	text-align: center;
+	}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	padding: 2px;
+	}
+
+#commentform #submit {
+	margin: 10px 0 50px;
+	float: left;
+	border: 10px solid white;
+}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+.alt {
+	margin: 0;
+	padding: 10px;
+	}
+
+.commentlist {
+	padding: 0;
+	text-align: left;
+	}
+
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 20px 20px 10px;
+	list-style: none;
+	background-color: #DDD;
+}
+
+.commentlist p {
+	margin: 10px 5px 10px 0;
+	}
+
+#commentform p {
+	margin: 5px 0;
+	}
+
+.nocomments {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	background-color: #DDD;
+}
+/* End Comments */
+
+
+
+/* Begin Sidebar */
+#sidebar
+{
+	padding: 20px 0 10px 0;
+	margin-left: 550px; /* SIDEBAR LEFT DISTANCE */
+	width: 190px;
+	display: inline-block;
+}
+
+#sidebar form {
+	margin: 0;
+	}
+/* End Sidebar */
+
+
+
+/* Begin Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: left;
+	}
+
+.hidden {
+	display: none;
+	}
+
+hr {
+	display: none;
+	color: #CCC;
+	}
+
+div.hr {
+  height: 1px;
+  background: #fff;
+	border-bottom: 1px solid #DDD;
+	margin-top: 50px;
+}
+
+div.hr hr {
+  display: none;
+}
+
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	}
+/* End Various Tags & Classes*/
+
+
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions */
