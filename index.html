@@ -146,6 +146,14 @@
 <hometitle><a href="index.html">caldeira213.net</a> //  <a href="index.html">ler</a>  /  <a href="ver.php.html">ver</a>  /  <a href="ir.php.html">ir</a>  /  <a href="dizer.php.html">dizer</a></hometitle>
 </div>
 
+<script>
+    document.getElementById('searchsubmit').addEventListener("click", function(event){
+        var query = document.getElementById('searchform').s.value;
+        window.open("https://www.google.pt/#q=site:caldeira213.net+" + query, '_blank');
+        event.preventDefault();
+    }, false);
+</script>
+
 <!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
 </body>
 </html>
