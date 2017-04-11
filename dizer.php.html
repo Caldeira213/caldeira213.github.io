@@ -2,257 +2,28 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<link rel="stylesheet" href="wp-content/themes/default_black/style.css" type="text/css" />
-	<title>: Caldeira 213 :</title>
-	<meta name="Generator" content="Cocoa HTML Writer">
-	<meta name="CocoaVersion" content="824.48">
-
-
-
-</head>   
-<body>
-
-
-<div id="content" class="narrowcolumn">
-	<div class="post">
-		<h2>Dizer</h2>	
-		
-		<div class="linkpad">
-
-			
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title>Contact Form</title>
-	<style type="text/css">
-		/* BASIC STYLES */
-		fieldset{
-			margin:10;
-			padding:10;
-			border:0;
-		}
-		
-		label{
-			font: 1.3em Helvetica, 'Lucida Grande', Verdana, Arial, Sans-Serif;
-			font-weight: bold;
-			color: #FFF;
-			width:250px; 
-			display:block;
-			margin: 0 0 4px;
-		}
-		
-		.txt_input{
-			width:250px; 
-			display:block;
-			padding: 4px;
-			margin: 0 0 12px;
-		}
-		
-		textarea{
-			height:120px; 
-			width:405px;
-			margin: 0 0 18px;
-		}
-		
-		input{
-			font: 1.5em Helvetica, 'Lucida Grande', Verdana, Arial, Sans-Serif;
-			background-color: #fff;
-			border-style: none;
-		}
-		
-		.req{
-			color:#f00;
-			font-size:90%;
-		}
-		
-		#form_errors{
-			font: 1.3em Helvetica, 'Lucida Grande', Verdana, Arial, Sans-Serif;
-			font-weight: bold;
-			color: #FFF;
-			display:none;
-		}
-		
-		#form_thanks{
-			font: 1.3em Helvetica, 'Lucida Grande', Verdana, Arial, Sans-Serif;
-			font-weight: bold;
-			color: #FFF;
-			display:block;
-		}
-		
-		
-		.linkpad {
-			padding: 10px;
-			display: block;
-		}
-		
-	</style>
-
-	<script type="text/javascript">
-v_fields = new Array('sender_email','sender_message');alert_on = true;thanks_on = true; thanks_message = "mensagem enviada.";	
-	function validateForm(){
-		
-		//alert(v_fields);
-		
-		//init errors
-		var err = "";
-		
-		//start checking fields
-		for(i=0;i<v_fields.length;i++){
-			
-			//store the field value
-			var _thisfield = eval("document.contact."+v_fields[i]+".value");
-			
-			//check the field value
-			if(v_fields[i] == "sender_name"){
-				if(!isAlpha(_thisfield)){ err += "- introduzir nome\n";}
-			}else if(v_fields[i] == "sender_subject"){
-				if(!isAlpha(_thisfield)){ err += "- introduzir assunto\n";}
-			}else if(v_fields[i] == "sender_email"){
-				if(!isEmail(_thisfield)){ err += "- introduzir/verificar email\n";}
-			}else if(v_fields[i] == "sender_url"){
-				if(!isURL(_thisfield)){ err += "- introduzir/verificar URL\n";}
-			}else if(v_fields[i] == "sender_phone"){
-				if(!isPhone(_thisfield)){ err += "- introduzir nº de telefone\n";}
-			}else if(v_fields[i] == "sender_message"){
-				if(!isText(_thisfield)){ err += "- escrever mensagem\n";}
-			}
-			
-		}//end for
-		
-		if(err != ""){ 
-			if(alert_on){
-				alert("Erro:\n"+err);
-			}else{
-				showErrors(err);
-			}
-			
-			return false;
-		
-		}
-		
-		return true;
-	}
-	
-	//function to show errors in HTML
-	function showErrors(str){
-		var err = str.replace(/\n/g,"<br />");
-		document.getElementById("form_errors").innerHTML = err;
-		document.getElementById("form_errors").style.display = "block";
-	
-	}
-	
-	//function to show thank you message in HTML
-	function showThanks(str){
-		var tym = str.replace(/\n/g,"<br />");
-		document.getElementById("form_thanks").innerHTML = tym;
-		document.getElementById("form_thanks").style.display = "block";
-	
-	}
-	
-	function isEmail(str){
-	if(str == "") return false;
-	var regex = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i
-	return regex.test(str);
-	}
-	
-	function isText(str){
-		if(str == "") return false;
-		return true;
-	}
-	
-	function isURL(str){
-		var regex = /[a-zA-Z0-9\.\/:]+/
-		return regex.test(str);
-	}
-	
-	// returns true if the number is formatted in the following ways:
-	// (000)000-0000, (000) 000-0000, 000-000-0000, 000.000.0000, 000 000 0000, 0000000000
-	function isPhone(str){
-		var regex = /^\(?[2-9]\d{2}[\)\.-]?\s?\d{3}[\s\.-]?\d{4}$/
-		return regex.test(str);
-	}
-	
-	// returns true if the string contains A-Z, a-z or 0-9 or . or # only
-	function isAddress(str){
-		var regex = /[^a-zA-Z0-9\#\.]/g
-		if (regex.test(str)) return true;
-		return false;
-	}
-	
-	// returns true if the string is 5 digits
-	function isZip(str){
-		var regex = /\d{5,}/;
-		if(regex.test(str)) return true;
-		return false;
-	}
-	
-	// returns true if the string contains A-Z or a-z only
-	function isAlpha(str){
-		var regex = /[a-zA-Z]/g
-		if (regex.test(str)) return true;
-		return false;
-	}
-	
-	// returns true if the string contains A-Z or a-z or 0-9 only
-	function isAlphaNumeric(str){
-		var regex = /[^a-zA-Z0-9]/g
-		if (regex.test(str)) return false;
-		return true;
-	}
-
-</script>
-
-	
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <link rel="stylesheet" href="wp-content/themes/default_black/style.css" type="text/css" />
+    <title>: Caldeira 213 :</title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="824.48">
 </head>
 <body>
-<div id="container" >
-<div class="contact">
-				
-		<fieldset>
-		<p id="form_errors"></p>
-		<p id="form_thanks"></p>
-		<form name="contact" action="dizer.php.html" method="post" onsubmit="return validateForm();">
-
-		<label>nome </label>
-		<input type="text" class="txt_input" name="sender_name" />
-
-		<label>e-mail <span class="req">*</span></label>
-		<input type="text" class="txt_input" name="sender_email" />
-		
-		<label>URL </label>
-		<input type="text" class="txt_input" name="sender_url" />
-
-		<label>assunto </label>
-		<input type="text" class="txt_input" name="sender_subject" />
-
-		<label>mensagem <span class="req">*</span></label>
-		<textarea name="sender_message"></textarea>
-		</br></br>
-		<input type="submit" name="submitForm" value="enviar" />
-		</form>
-		</fieldset>
-
-	</div>
-	
-</div>
-</body>
-</html>	
-		</div>
-
-	</div>
-</div>
-
-
-
+    <div id="content" class="narrowcolumn">
+        <div class="post">
+            <h2>Dizer</h2>
+            <div class="linkpad">
+                <div id="container">
+                    <enlace><a href="mailto:caldeira@cenatus.org">caldeira@cenatus.org</a></enlace>
+                </div>
+            </div>
+          </div>
+      </div>
 <div id="foo">
-<hometitle><a href="index.html">caldeira213.net</a> //  <a href="index.html">ler</a>  /  <a href="ver.php.html">ver</a>  /  <a href="ir.php.html">ir</a>  /  <a href="dizer.php.html">dizer</a></hometitle>
+    <hometitle><a href="index.html">caldeira213.net</a> // <a href="index.html">ler</a> / <a href="ver.php.html">ver</a> / <a href="ir.php.html">ir</a> / <a href="dizer.php.html">dizer</a></hometitle>
 </div>
-
 </body>
 </html>
